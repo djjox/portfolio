@@ -14,7 +14,7 @@
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
 				<a href="#" class="navbar-brand">
-					<img id="navbar-logo" src="{{ asset('img/logo.png') }}" alt="Logo" width="50" height="50">
+					<canvas id="navbar-canvas" width="50" height="50"></canvas>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -69,7 +69,7 @@
 
 	<!-- cdn links -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
 
 	<!-- js -->
 	<script src="{{ asset('js/app.js') }}"></script>

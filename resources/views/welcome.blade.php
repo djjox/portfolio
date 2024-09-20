@@ -13,8 +13,8 @@
 	<div id="content">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
-				<a href="#" class="navbar-brand">
-					<canvas id="navbar-canvas" width="50" height="50"></canvas>
+				<a href="#" class="navbar-brand text-white fw-bold">
+					Joep Verhofstad
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -57,7 +57,9 @@
 						<p id="typingEffect" class="typing-effect">
 							I'm a <span></span>
 						</p>
-						<a href="#" class="btn btn-outline-light rounded-0" style="width: 50%">Get in touch</a>
+						<a href="#" class="btn btn-cta rounded-0" style="width: 50%">
+							<span>Get in touch</span>
+						</a>
 					</div>
 					<div class="col-lg-6 hero-image">
 						<img src="{{ asset('img/boy2.png') }}" alt="">
@@ -70,6 +72,7 @@
 	<!-- cdn links -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<!-- js -->
 	<script src="{{ asset('js/app.js') }}"></script>

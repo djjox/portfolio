@@ -171,11 +171,41 @@ p span.stop-blinking::before {
     background-color: transparent;
 }
 
-.btn-outline-light {
-    transition: box-shadow 0.3s ease-in-outk;
+.btn-cta {
+    position: relative;
+    color: var(--primary-font-color);
+    border: 2px solid var(--primary-font-color);
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.btn-outline-light:hover,
-.btn-outline-light:focus {
-    box-shadow: 2px 4px 15px var(--primary-font-color);
+.btn-cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: width 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.btn-cta:hover::before,
+.btn-cta:focus::before {
+    width: 100%;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+    color: var(--bg-color);
+    box-shadow: 2px 4px 15px #fff;
+    border-color: #fff;
+}
+
+.btn-cta span {
+    position: relative;
+    z-index: 1;
 }

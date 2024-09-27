@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 	<title>Joep Verhofstad</title>
 </head>
@@ -62,6 +63,10 @@
 						<a href="#" class="btn btn-cta rounded-0" style="width: 50%;">
 							<span>Get in touch</span>
 						</a>
+						<a href="https://github.com/djjox" target="_blank" class="text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub">
+							<i class="fab fa-github fa-2x mt-3"></i>
+						</a>
+
 					</div>
 					<div class="col-lg-6 hero-image">
 						<img src="{{ asset('img/boy2.png') }}" alt="" style="height: 75%;">
@@ -116,13 +121,14 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
 
 	<!-- js -->
 	<script src="{{ asset('js/app.js') }}"></script>
 	<script src="{{ asset('js/preloader.js') }}"></script>
 	<script src="{{ asset('js/typing.js') }}"></script>
 	<script src="{{ asset('js/animations.js') }}"></script>
-	<script src="{{ asset('js/whatsapp.js') }}"></script>
+	<script src="{{ asset('js/tooltips.js') }}"></script>
 </body>
 
 </html>
